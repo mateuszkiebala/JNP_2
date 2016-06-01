@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">naMsze</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="date_header">Dzień\nGodzina</string>
+    <string name="target_header">Msza</string>
+    <string name="range_header">Promień</string>
+    <string name="all_string">wszyscy</string>
+    <string name="students_string">młodzież</string>
+    <string name="children_string">dzieci</string>
+    <string name="exit_message">Naciśnij jeszcze raz, aby wyjść</string>
+    <string name="marker_message">"Następne msze</string>
+</resources>

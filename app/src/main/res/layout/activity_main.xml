@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Silver">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/brand_mark"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:id="@+id/menuLayout">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/viewTop"
+            android:layout_alignParentTop="true"
+            android:background="@color/DarkSlateBlue"/>
+
+        <ExpandableListView
+            android:id="@+id/menuList"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_above="@+id/searchingButton"
+            android:layout_below="@+id/viewTop"
+            android:childDivider="@color/SteelBlue"
+            android:dividerHeight="5dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:id="@+id/searchingButton"
+            android:onClick="startButton"
+            android:textAllCaps="false"
+            android:text="Wyszukaj"
+            android:textSize="25dp"
+            android:background="@color/DarkSlateBlue"
+            android:textColor="@color/White"
+            android:typeface="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

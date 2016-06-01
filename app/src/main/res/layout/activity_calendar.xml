@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                tools:context="naMsze.naMsze.Calendar"
+                android:background="@color/DarkGray">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Przesuń, aby wybrać"
+        android:id="@+id/selectTextView"
+        android:textColor="@color/White"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/hoursListView"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignRight="@+id/minutesListView"
+        android:layout_alignEnd="@+id/minutesListView"
+        android:layout_alignLeft="@+id/minutesListView"
+        android:layout_alignStart="@+id/minutesListView"
+        android:layout_above="@+id/hoursListView"
+        android:background="@color/Gray"/>
+
+    <ListView
+        android:layout_width="80dp"
+        android:layout_height="180dp"
+        android:id="@+id/minutesListView"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/selectTextView"
+        android:layout_alignEnd="@+id/selectTextView"
+        android:divider="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignRight="@+id/minutesListView"
+        android:layout_alignEnd="@+id/minutesListView"
+        android:layout_alignLeft="@+id/minutesListView"
+        android:layout_alignStart="@+id/minutesListView"
+        android:layout_below="@+id/hoursListView"
+        android:background="@color/Gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignRight="@+id/hoursListView"
+        android:layout_alignEnd="@+id/hoursListView"
+        android:layout_alignLeft="@+id/hoursListView"
+        android:layout_alignStart="@+id/hoursListView"
+        android:layout_above="@+id/hoursListView"
+        android:background="@color/Gray"/>
+
+    <ListView
+        android:layout_width="80dp"
+        android:layout_height="180dp"
+        android:id="@+id/hoursListView"
+        android:layout_alignTop="@+id/minutesListView"
+        android:layout_alignLeft="@+id/selectTextView"
+        android:layout_alignStart="@+id/selectTextView"
+        android:divider="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignRight="@+id/hoursListView"
+        android:layout_alignEnd="@+id/hoursListView"
+        android:layout_alignLeft="@+id/hoursListView"
+        android:layout_alignStart="@+id/hoursListView"
+        android:layout_below="@+id/hoursListView"
+        android:background="@color/Gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hourText"
+        android:text="Godzina"
+        android:textColor="@color/White"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/hoursListView"
+        android:layout_alignRight="@+id/hoursListView"
+        android:layout_alignEnd="@+id/hoursListView"
+        android:layout_alignLeft="@+id/hoursListView"
+        android:layout_alignStart="@+id/hoursListView"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minutesText"
+        android:text="Minuta"
+        android:textColor="@color/White"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/minutesListView"
+        android:layout_alignRight="@+id/minutesListView"
+        android:layout_alignEnd="@+id/minutesListView"
+        android:layout_alignLeft="@+id/minutesListView"
+        android:layout_alignStart="@+id/minutesListView"
+        android:gravity="center"/>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/calendarView"
+        android:layout_below="@+id/hourText"
+        android:layout_above="@+id/buttonCancel"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="ANULUJ"
+        android:textColor="@color/White"
+        android:onClick="onCancelButton"
+        android:id="@+id/buttonCancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/hourText"
+        android:layout_alignEnd="@+id/hourText"
+        android:background="@color/Gray"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="GOTOWE"
+        android:textColor="@color/White"
+        android:onClick="onAcceptButton"
+        android:id="@+id/buttonAccept"
+        android:background="@color/Gray"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/minutesText"
+        android:layout_alignStart="@+id/minutesText"/>
+
+</RelativeLayout>
