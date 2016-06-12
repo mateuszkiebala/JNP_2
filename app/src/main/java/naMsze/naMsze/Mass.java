@@ -8,7 +8,7 @@ public class Mass {
     private int MassTypeID;
     private int ChurchID;
 
-    public Mass() {};
+    public Mass() {}
 
     public Mass(int MassID, String Hour, String Target, int PeriodID, int MassTypeID, int ChurchID) {
         this.MassID = MassID;
