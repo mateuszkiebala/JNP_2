@@ -6,7 +6,7 @@ public class Period {
     private String Start;
     private String End;
 
-    public Period() {};
+    public Period() {}
 
     public Period(int PeriodID, String Name, String Start, String End) {
         this.PeriodID = PeriodID;

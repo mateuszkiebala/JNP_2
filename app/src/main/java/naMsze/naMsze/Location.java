@@ -8,7 +8,7 @@ public class Location {
     private double X;
     private double Y;
 
-    public Location() {};
+    public Location() {}
 
     public Location(int LocationID, String StreetAddress, String City, String State,
                     double X, double Y) {

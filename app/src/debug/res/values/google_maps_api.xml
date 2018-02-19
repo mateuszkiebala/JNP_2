@@ -1,5 +1,9 @@
 <resources>
     <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+<<<<<<< HEAD
         AIzaSyDmjm691Y6syWq-v0rUoi37mFGjxG_DRAg
+=======
+         AIzaSyDmjm691Y6syWq-v0rUoi37mFGjxG_DRAg
+>>>>>>> 817b414949497e30e5ac4cfeb247c936edc0118e
     </string>
 </resources>
